@@ -1,0 +1,10 @@
+{
+    "outDir": "out/controls",
+    "components": {
+        "TimesheetControl": {
+            "namespace": "TimesheetControl",
+            "componentType": "field",
+            "template": "component"
+        }
+    }
+} 

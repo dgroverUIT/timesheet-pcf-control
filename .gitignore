@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+out/
+dist/
+obj/
+bin/
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Temp files
+*.log
+~* 

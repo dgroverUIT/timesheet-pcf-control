@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Entities />
+  <Roles />
+  <Workflows />
+  <FieldSecurityProfiles />
+  <Templates />
+  <EntityMaps />
+  <EntityRelationships />
+  <OrganizationSettings />
+  <optionsets />
+  <CustomControls>
+    <CustomControl>
+      <Name>tsc_TimesheetControl</Name>
+      <Id>{5d51f268-b328-4c70-9f38-c7f4a2ee7d8c}</Id>
+      <FileName>/Controls/tsc_TimesheetControl/bundle.js</FileName>
+      <CustomControlDescriptionXML>
+        <controlmetadata>
+          <control namespace="tsc" constructor="TimesheetControl" version="0.0.1" display-name-key="Timesheet Control" description-key="A timesheet control for managing time entries" control-type="standard" component-type="66">
+            <property name="timeEntries" display-name-key="Time Entries" description-key="Time entries for the current user" of-type="Multiple" usage="bound" required="true" />
+            <property name="projects" display-name-key="Projects" description-key="Collection of available projects" of-type="Multiple" usage="bound" required="true" />
+            <resources>
+              <code path="bundle.js" order="1" />
+              <css path="css/timesheet.css" order="1" />
+              <resx path="strings/TimesheetControl.1033.resx" version="1.0.0" />
+            </resources>
+          </control>
+        </controlmetadata>
+      </CustomControlDescriptionXML>
+    </CustomControl>
+  </CustomControls>
+  <EntityDataProviders />
+  <Languages>
+    <Language>1033</Language>
+  </Languages>
+</ImportExportXml> 

@@ -1,0 +1,13 @@
+{
+  "solution": {
+    "name": "TimesheetControl",
+    "version": "1.0.0",
+    "publisher": {
+      "name": "Timesheet Control Publisher",
+      "uniqueName": "timesheetcontrolpublisher",
+      "prefix": "tsc"
+    }
+  },
+  "packageName": "TimesheetControl.zip",
+  "folderName": "TimesheetControl"
+} 

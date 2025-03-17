@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.PowerPlatform.Sdk/1.0.0">
+  <PropertyGroup>
+    <Name>TimesheetControl</Name>
+    <ProjectGuid>5d51f268-b328-4c70-9f38-c7f4a2ee7d8c</ProjectGuid>
+    <OutputPath>$(MSBuildThisFileDirectory)out</OutputPath>
+    <ImportProjectName>TimesheetControl</ImportProjectName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.PowerPlatform.MSBuild.Solution" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ExcludeDirectories Include="$(MSBuildThisFileDirectory)\.gitignore" />
+    <ExcludeDirectories Include="$(MSBuildThisFileDirectory)\bin\**" />
+    <ExcludeDirectories Include="$(MSBuildThisFileDirectory)\obj\**" />
+    <ExcludeDirectories Include="$(MSBuildThisFileDirectory)\*.cdsproj" />
+    <ExcludeDirectories Include="$(MSBuildThisFileDirectory)\*.cdsproj.user" />
+    <ExcludeDirectories Include="$(MSBuildThisFileDirectory)\*.sln" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)\**" Exclude="@(ExcludeDirectories)" />
+    <Content Include="$(MSBuildThisFileDirectory)\**" Exclude="@(ExcludeDirectories)" />
+  </ItemGroup>
+</Project> 
