@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.PowerPlatform.BuildTools/0.1.7">
+  <PropertyGroup>
+    <Name>TimesheetSolution</Name>
+    <ProjectGuid>cd3a1725-af0e-4560-8aaa-6c1fe7260dcc</ProjectGuid>
+    <OutputPath>$(MSBuildThisFileDirectory)out</OutputPath>
+    <Configuration>Release</Configuration>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="timesheet-new.pcfproj" />
+  </ItemGroup>
+</Project> 

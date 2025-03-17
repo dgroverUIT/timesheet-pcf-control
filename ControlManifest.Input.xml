@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="UIT" constructor="TimesheetControl" version="0.0.1" display-name-key="Timesheet Control" description-key="A timesheet control for managing time entries" control-type="standard">
+    <property name="timeEntries" display-name-key="Time Entries" description-key="Time entries for the current user" of-type="Multiple" usage="bound" required="true" />
+    <property name="projects" display-name-key="Projects" description-key="Collection of available projects" of-type="Multiple" usage="bound" required="true" />
+    
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/timesheet.css" order="1" />
+      <resx path="strings/TimesheetControl.1033.resx" version="1.0.0" />
+    </resources>
+  </control>
+</manifest> 
