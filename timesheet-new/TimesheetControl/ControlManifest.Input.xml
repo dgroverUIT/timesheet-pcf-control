@@ -3,9 +3,25 @@
   <control namespace="UIT" constructor="TimesheetControl" version="0.0.1" display-name-key="TimesheetControl" description-key="Timesheet Entry Control" control-type="standard">
     <external-service-usage enabled="false">
     </external-service-usage>
-    <property name="sampleProperty" display-name-key="Property_Display_Key" description-key="Property_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+    
+    <!-- Dataset property for time entries -->
+    <data-set name="timeEntryDataSet" display-name-key="Time Entries Dataset">
+      <property-set name="msdyn_date" display-name-key="Date" description-key="Date of time entry" of-type="DateAndTime.DateOnly" usage="bound" required="true" />
+      <property-set name="msdyn_duration" display-name-key="Hours" description-key="Hours worked" of-type="Whole.None" usage="bound" required="true" />
+      <property-set name="msdyn_project" display-name-key="Project" description-key="Related project" of-type="Lookup.Simple" usage="bound" required="true" />
+      <property-set name="msdyn_description" display-name-key="Description" description-key="Work description" of-type="SingleLine.Text" usage="bound" required="false" />
+    </data-set>
+    
+    <!-- Enable required features -->
+    <feature-usage>
+      <uses-feature name="WebAPI" required="true" />
+      <uses-feature name="Utility" required="true" />
+    </feature-usage>
+
     <resources>
       <code path="index.ts" order="1"/>
+      <css path="css/timesheet.css" order="2" />
+      <resx path="strings/TimesheetControl.1033.resx" version="1.0.0" />
     </resources>
   </control>
 </manifest>
