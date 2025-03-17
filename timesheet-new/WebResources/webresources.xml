@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+    <WebResourceId>{00000000-0000-0000-0000-000000000000}</WebResourceId>
+    <Name>uit_/timesheet.html</Name>
+    <DisplayName>Timesheet Control Web Resource</DisplayName>
+    <Description>Web resource to host the Timesheet PCF control</Description>
+    <WebResourceType>1</WebResourceType>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <IsEnabledForMobileClient>1</IsEnabledForMobileClient>
+    <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+    <DependencyXml>
+        <Dependencies>
+            <Dependency componentType="66">
+                <Name>uit_UIT.TimesheetControl</Name>
+                <DisplayName>Timesheet Control</DisplayName>
+            </Dependency>
+        </Dependencies>
+    </DependencyXml>
+    <Content>timesheet.html</Content>
+</WebResource> 
